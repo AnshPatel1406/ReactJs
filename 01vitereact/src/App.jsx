@@ -1,9 +1,17 @@
-
+import Chai from './chai'
 
 function App() {
 
   return (
-    <h1>Helo Vite</h1>
+      // <Chai/>
+      // <h2>hello</h2> // not Possible // only one at a time
+
+      //to over come this use <> all content here </>
+      <>
+      <Chai/>
+      <h2>hello</h2> 
+      </>
+      // <> in React is called as Fragment  
   )
 }
 

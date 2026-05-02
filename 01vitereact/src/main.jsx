@@ -27,5 +27,6 @@ createRoot(document.getElementById('root')).render(
   // MyApp() // will run 
   // <MyApp/> // this means the function is executed 
   // TestElement // this will work // TestElement() or <TestElement/> will not Work 
-  reactElement
+  // reactElement
+  <App/>
 )

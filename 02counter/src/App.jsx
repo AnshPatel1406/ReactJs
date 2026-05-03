@@ -9,13 +9,26 @@ import './App.css'
 function App() {
 // useState return 2 values in array form a counter and a function
 // isLoggedin , setLoggedin | login , setLogin etc.... 
-  let [counter,setCounter] = useState(15)
+  const [counter,setCounter] = useState(15)
 
   // let counter = 5
  
   const addValue = ()=> {
     // counter += 1 // when we use Hook | useState we dont update like this 
     setCounter(counter+1)
+    setCounter(counter+1)
+    setCounter(counter+1)
+    setCounter(counter+1)
+    setCounter(counter+1)
+    // no matter as many times we right the hook useState will make it as a batch 
+    // and remove duplicates 
+    // to overcome this we use call back function in it
+
+    setCounter((prevCounter)=>prevCounter+10) // will add 10 
+    setCounter((prevCounter)=>prevCounter+10) // will add 10 
+
+
+
 
     console.log("Clicked",counter);
     // here when the button is clicked in console we see counter is updating 

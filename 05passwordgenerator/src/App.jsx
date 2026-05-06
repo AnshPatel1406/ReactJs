@@ -2,7 +2,7 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
-import './App.css'
+// import './App.css'
 // Add useRef and useEffect to your imports
 import { useState, useCallback, useEffect, useRef } from 'react'
 
@@ -41,6 +41,8 @@ function App() {
   useEffect(() => {
     passwordGenerator()
   }, [length, numberAllowed, charAllowed, passwordGenerator])
+
+
   return (
     
     <div className="w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 my-8 bg-gray-800 text-orange-500">

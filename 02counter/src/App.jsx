@@ -16,16 +16,13 @@ function App() {
   const addValue = ()=> {
     // counter += 1 // when we use Hook | useState we dont update like this 
     setCounter(counter+1)
-    setCounter(counter+1)
-    setCounter(counter+1)
-    setCounter(counter+1)
-    setCounter(counter+1)
+    
     // no matter as many times we right the hook useState will make it as a batch 
     // and remove duplicates 
     // to overcome this we use call back function in it
 
-    setCounter((prevCounter)=>prevCounter+10) // will add 10 
-    setCounter((prevCounter)=>prevCounter+10) // will add 10 
+    // setCounter((prevCounter)=>prevCounter+10) // will add 10 
+    // setCounter((prevCounter)=>prevCounter+10) // will add 10 
 
 
 
